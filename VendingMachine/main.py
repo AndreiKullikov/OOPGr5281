@@ -17,10 +17,11 @@ if __name__ == "__main__":
     item1 = Product(100, 1, "Lays")
     item2 = Product(50, 2, "Cola")
     item3 = Bottle(150, 3, "Mineral Water", 101, 1.5)
+    item4 = HotDrink(130,4,"Coffe",102,70)
     assort.append(item1)
     assort.append(item2)
     assort.append(item3)
-
+    assort.append(item4)
 
     hold1 = Holder(4, 4)
     coinDesp = CoinDispenser(0)
