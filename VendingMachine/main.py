@@ -3,6 +3,7 @@ import sys
 
 from typing import List
 from Domain.bottle import Bottle
+from Domain.HotDrink import HotDrink
 from Domain.product import Product
 from Services.coin_dispenser import CoinDispenser
 from Services.display import Display
