@@ -1,6 +1,7 @@
 from Classes.actor import Actor
 from Interfaces.i_return_order import iReturnOrder
 
+# Класс описывающий поведение участников акции
 class PromotionLimitExceededError(Exception):
     pass
 
