@@ -1,7 +1,7 @@
 from domain.person import Person
 
 
-class Student(Person):#Comparable
+class Student(Person):
     generalId = 0
 
 
@@ -14,7 +14,7 @@ class Student(Person):#Comparable
         return self.id
 
     def __str__(self):
-        return "Students [age=" + str(super().getAge()) + ", name=" + super().getName() + ", id=" + str(self.id) + "]"
+        return "Students [Возраст=" + str(super().getAge()) + ", Имя=" + super().getName() + ", id=" + str(self.id) + "]"
 
     def __lt__(self, obj): 
         return ((self.age) < (obj.age)) 

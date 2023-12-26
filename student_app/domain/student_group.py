@@ -22,9 +22,7 @@ class StudentGroup:
         student_info = "\n".join(str(student) for student in self.students)
         return f"Group ID: {self.group_id}, Number of Students: {len(self.students)}, Students:\n{student_info}"
 
-    def __lt__(self, other):
-        # Compare based on the number of students in the group
+    def __lt__(self, other):      
         if len(self.students) != len(other.students):
             return len(self.students) < len(other.students)
-        # If the number of students is the same, compare based on group ID
         return self.group_id < other.group_id
